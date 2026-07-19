@@ -12,6 +12,7 @@
 - `campus.html`
 - `admission.html`
 - `contact.html`
+- `sources.html`
 - `README.md`
 - `css/style.css`
 - `js/main.js`

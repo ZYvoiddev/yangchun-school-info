@@ -17,6 +17,7 @@
 - `campus.html` 校园环境
 - `admission.html` 招生就业
 - `contact.html` 联系我们
+- `sources.html` 资料来源与免责声明
 
 ## 技术
 
