@@ -14,6 +14,7 @@
 - `contact.html`
 - `sources.html`
 - `README.md`
+- `PROJECT-BRIEF.md`
 - `css/style.css`
 - `js/main.js`
 - `assets/icons/favicon.svg`
