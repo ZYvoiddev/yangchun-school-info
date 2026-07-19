@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">运动空间示意图</title>
+  <desc id="desc">操场和球场示意图。</desc>
+  <rect width="900" height="560" fill="#eef5ff"/>
+  <rect x="92" y="92" width="716" height="376" rx="160" fill="#f59e0b"/>
+  <rect x="152" y="144" width="596" height="272" rx="118" fill="#ffffff" opacity=".95"/>
+  <rect x="230" y="185" width="440" height="190" rx="8" fill="#2563eb"/>
+  <path d="M450 185v190M230 280h440" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="450" cy="280" r="58" fill="none" stroke="#ffffff" stroke-width="8"/>
+</svg>

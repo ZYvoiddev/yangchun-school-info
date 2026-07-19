@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">实训空间示意图</title>
+  <desc id="desc">专业实训设备和数字屏幕的示意图。</desc>
+  <rect width="900" height="560" fill="#f3f7fb"/>
+  <rect x="76" y="82" width="748" height="396" rx="8" fill="#ffffff" stroke="#d9e2f1" stroke-width="8"/>
+  <rect x="128" y="130" width="290" height="190" rx="8" fill="#12335f"/>
+  <path d="M158 175h210M158 220h148M158 265h188" stroke="#8fb4f8" stroke-width="14" stroke-linecap="round"/>
+  <rect x="474" y="130" width="250" height="250" rx="8" fill="#eaf1ff" stroke="#2563eb" stroke-width="8"/>
+  <path d="M548 332V222l108 55z" fill="#f59e0b"/>
+  <path d="M170 382h516" stroke="#12335f" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="214" cy="382" r="38" fill="#2563eb"/>
+  <circle cx="640" cy="382" r="38" fill="#2563eb"/>
+</svg>

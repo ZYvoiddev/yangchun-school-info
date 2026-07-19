@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">图书馆示意图</title>
+  <desc id="desc">图书馆和阅读空间示意图。</desc>
+  <rect width="900" height="560" fill="#f3f7fb"/>
+  <rect x="110" y="110" width="680" height="340" rx="8" fill="#ffffff" stroke="#d9e2f1" stroke-width="8"/>
+  <path d="M190 170h120v220H190zm150 0h120v220H340zm150 0h120v220H490zm150 0h70v220h-70z" fill="#eaf1ff" stroke="#8fb4f8" stroke-width="6"/>
+  <path d="M212 214h76m-76 58h76m74-58h76m-76 58h76m74-58h76m-76 58h76" stroke="#12335f" stroke-width="10" stroke-linecap="round"/>
+  <path d="M168 420h564" stroke="#f59e0b" stroke-width="16" stroke-linecap="round"/>
+</svg>

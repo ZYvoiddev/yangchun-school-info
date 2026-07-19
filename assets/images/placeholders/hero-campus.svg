@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 675" role="img" aria-labelledby="title desc">
+  <title id="title">校园示意图</title>
+  <desc id="desc">以深蓝、科技蓝和橙色绘制的校园建筑示意图。</desc>
+  <rect width="900" height="675" fill="#eef5ff"/>
+  <path d="M0 510h900v165H0z" fill="#dceafe"/>
+  <path d="M94 448h214v102H94zM353 320h246v230H353zM642 398h178v152H642z" fill="#ffffff" stroke="#12335f" stroke-width="8"/>
+  <path d="M340 290h272l-136-92z" fill="#2563eb"/>
+  <path d="M120 472h42v42h-42zm78 0h42v42h-42zm185-105h48v48h-48zm84 0h48v48h-48zm84 0h48v48h-48zm0 84h48v99h-48zm119-25h42v42h-42zm72 0h42v42h-42z" fill="#dbeafe" stroke="#8fb4f8" stroke-width="4"/>
+  <path d="M73 580c86-48 159-48 246 0s170 48 250 0 154-48 258 0" fill="none" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="185" cy="212" r="45" fill="#f59e0b" opacity=".85"/>
+  <path d="M665 180h92m-46-46v92" stroke="#2563eb" stroke-width="14" stroke-linecap="round"/>
+</svg>

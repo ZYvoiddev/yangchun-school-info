@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-labelledby="title desc">
+  <title id="title">学生生活空间示意图</title>
+  <desc id="desc">宿舍与生活空间示意图。</desc>
+  <rect width="900" height="560" fill="#f8fbff"/>
+  <rect x="132" y="86" width="636" height="392" rx="8" fill="#ffffff" stroke="#d9e2f1" stroke-width="8"/>
+  <path d="M190 146h520v82H190zm0 130h520v82H190z" fill="#eaf1ff"/>
+  <path d="M244 146v212m154-212v212m154-212v212" stroke="#bfd2ed" stroke-width="8"/>
+  <path d="M180 420h540" stroke="#12335f" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="720" cy="108" r="45" fill="#f59e0b" opacity=".75"/>
+</svg>
