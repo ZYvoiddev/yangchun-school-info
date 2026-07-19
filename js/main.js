@@ -8,6 +8,33 @@ if (menuToggle && navLinks) {
   });
 }
 
+const noticeBars = document.querySelectorAll(".notice-bar");
+const noticeStorageKey = "yangchun-school-notice-dismissed-v1";
+
+if (noticeBars.length && localStorage.getItem(noticeStorageKey) !== "1") {
+  noticeBars.forEach((bar) => {
+    if (bar.dataset.noticeReady) return;
+    const text = bar.textContent.trim();
+    bar.textContent = "";
+    const span = document.createElement("span");
+    span.className = "notice-bar-text";
+    span.textContent = text;
+    const close = document.createElement("button");
+    close.className = "notice-close";
+    close.type = "button";
+    close.setAttribute("aria-label", "关闭通知条");
+    close.textContent = "×";
+    close.addEventListener("click", () => {
+      localStorage.setItem(noticeStorageKey, "1");
+      bar.remove();
+    });
+    bar.append(span, close);
+    bar.dataset.noticeReady = "true";
+  });
+} else {
+  noticeBars.forEach((bar) => bar.remove());
+}
+
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
@@ -70,3 +97,38 @@ window.addEventListener("load", () => {
     window.lucide.createIcons({ strokeWidth: 1.8 });
   }
 });
+
+const floatingTools = document.querySelector("[data-floating-tools]");
+if (floatingTools) {
+  const wechatToggle = floatingTools.querySelector("[data-wechat-toggle]");
+  const popover = floatingTools.querySelector("[data-wechat-popover]");
+  const topButton = floatingTools.querySelector("[data-scroll-top]");
+
+  const setPopoverOpen = (open) => {
+    if (!wechatToggle || !popover) return;
+    wechatToggle.setAttribute("aria-expanded", String(open));
+    popover.hidden = !open;
+  };
+
+  if (wechatToggle && popover) {
+    wechatToggle.addEventListener("click", () => {
+      const shouldOpen = wechatToggle.getAttribute("aria-expanded") !== "true";
+      setPopoverOpen(shouldOpen);
+    });
+
+    floatingTools.addEventListener("mouseenter", () => setPopoverOpen(true));
+    floatingTools.addEventListener("mouseleave", () => setPopoverOpen(false));
+    floatingTools.addEventListener("focusin", () => setPopoverOpen(true));
+    floatingTools.addEventListener("focusout", (event) => {
+      if (!floatingTools.contains(event.relatedTarget)) {
+        setPopoverOpen(false);
+      }
+    });
+  }
+
+  if (topButton) {
+    topButton.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+}
