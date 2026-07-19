@@ -64,3 +64,9 @@ if (countTargets.length) {
 
   countTargets.forEach((target) => observer.observe(target));
 }
+
+window.addEventListener("load", () => {
+  if (window.lucide) {
+    window.lucide.createIcons({ strokeWidth: 1.8 });
+  }
+});
