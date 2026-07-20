@@ -22,6 +22,8 @@
 - `assets/icons/favicon.svg`
 - `assets/vendor/lucide-subset.js`
 - `assets/images/placeholders/*.svg`
+- `assets/images/stock/*.jpg`
+- `assets/images/stock/SOURCES.md`
 
 ## 不要上传
 
@@ -33,6 +35,7 @@
 - `server.err.log`
 - `server.out.log`
 - 任何本地测试截图或缓存文件
+- `assets/images/stock/` 之外的临时下载图
 
 ## GitHub 仓库建议
 

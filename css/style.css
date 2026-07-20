@@ -167,7 +167,7 @@ img {
 .hero {
   background:
     linear-gradient(90deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.80) 38%, rgba(15, 23, 42, 0.22) 72%, rgba(15, 23, 42, 0) 100%),
-    url("../assets/images/placeholders/hero-campus.svg") center / cover no-repeat;
+    url("../assets/images/stock/campus-field.jpg") center / cover no-repeat;
   overflow: hidden;
   color: var(--white);
   min-height: calc(100vh - 56px);
@@ -1313,7 +1313,7 @@ img {
   .hero {
     background:
       linear-gradient(90deg, rgba(15, 23, 42, 0.96) 0%, rgba(15, 23, 42, 0.82) 58%, rgba(15, 23, 42, 0.64) 100%),
-      url("../assets/images/placeholders/hero-campus.svg") center / cover no-repeat;
+      url("../assets/images/stock/campus-field.jpg") center / cover no-repeat;
   }
 
   .notice-bar {
