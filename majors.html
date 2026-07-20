@@ -21,11 +21,12 @@
           <span class="status-chip placeholder">占位：专业实训现场图与学生作品</span>
         </div>
         <div class="major-filter" aria-label="专业分类筛选">
-          <button class="filter-button active" type="button" data-filter="all">全部</button>
-          <button class="filter-button" type="button" data-filter="it">信息技术</button>
-          <button class="filter-button" type="button" data-filter="manufacturing">智能制造</button>
-          <button class="filter-button" type="button" data-filter="service">现代服务</button>
+          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="filter-button" type="button" data-filter="it" aria-pressed="false">信息技术</button>
+          <button class="filter-button" type="button" data-filter="manufacturing" aria-pressed="false">智能制造</button>
+          <button class="filter-button" type="button" data-filter="service" aria-pressed="false">现代服务</button>
         </div>
+        <p class="filter-status" data-filter-status aria-live="polite">当前显示全部专业方向。</p>
         <div class="major-grid">
           <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="monitor"></i></span><div><span class="category">信息技术</span><h3>计算机应用</h3><p>适合对电脑操作、办公应用、网络基础和数字工具感兴趣的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>办公软件</em><em>网络基础</em><em>数字工具</em></div></div><div class="path-flow"><span>办公信息化</span><b></b><span>基础技术服务</span></div></article>
           <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="shopping-bag"></i></span><div><span class="category">信息技术</span><h3>电子商务</h3><p>适合喜欢网络营销、直播电商、网店运营和客户沟通的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>平台运营</em><em>内容推广</em><em>客户沟通</em></div></div><div class="path-flow"><span>电商运营</span><b></b><span>内容助理</span></div></article>

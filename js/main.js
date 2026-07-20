@@ -55,18 +55,47 @@ if (noticeBars.length && (!noticeStorage || noticeStorage.getItem(noticeStorageK
   noticeBars.forEach((bar) => bar.remove());
 }
 
-document.querySelectorAll("[data-filter]").forEach((button) => {
+const filterButtons = document.querySelectorAll("[data-filter]");
+const majorCards = document.querySelectorAll(".major-card[data-category]");
+const filterStatus = document.querySelector("[data-filter-status]");
+const filterLabels = {
+  all: "全部专业方向",
+  it: "信息技术类专业",
+  manufacturing: "智能制造类专业",
+  service: "现代服务类专业",
+};
+
+const applyMajorFilter = (filter) => {
+  let visibleCount = 0;
+
+  filterButtons.forEach((item) => {
+    const isActive = item.dataset.filter === filter;
+    item.classList.toggle("active", isActive);
+    item.setAttribute("aria-pressed", String(isActive));
+  });
+
+  majorCards.forEach((card) => {
+    const isVisible = filter === "all" || card.dataset.category === filter;
+    card.hidden = !isVisible;
+    card.classList.toggle("is-hidden", !isVisible);
+    if (isVisible) visibleCount += 1;
+  });
+
+  if (filterStatus) {
+    filterStatus.textContent = `当前显示 ${filterLabels[filter] || "所选分类"}，共 ${visibleCount} 个专业。`;
+  }
+};
+
+filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const filter = button.dataset.filter;
-
-    document.querySelectorAll("[data-filter]").forEach((item) => item.classList.remove("active"));
-    button.classList.add("active");
-
-    document.querySelectorAll("[data-category]").forEach((card) => {
-      card.hidden = filter !== "all" && card.dataset.category !== filter;
-    });
+    applyMajorFilter(button.dataset.filter || "all");
   });
 });
+
+if (filterButtons.length && majorCards.length) {
+  const activeFilter = document.querySelector("[data-filter].active")?.dataset.filter || "all";
+  applyMajorFilter(activeFilter);
+}
 
 document.querySelectorAll("[data-demo-form]").forEach((form) => {
   form.addEventListener("submit", (event) => {

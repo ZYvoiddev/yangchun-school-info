@@ -651,6 +651,13 @@ img {
   border-color: var(--blue);
 }
 
+.filter-status {
+  margin: -10px 0 18px;
+  color: #526175;
+  font-size: 14px;
+  font-weight: 800;
+}
+
 .major-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -663,6 +670,11 @@ img {
   gap: 18px;
   min-height: 300px;
   overflow: hidden;
+}
+
+.major-card.is-hidden,
+.major-card[hidden] {
+  display: none !important;
 }
 
 .major-card::before {
