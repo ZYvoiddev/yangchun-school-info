@@ -58,6 +58,7 @@ http://127.0.0.1:8000/
 - `js/`：当前站点交互脚本，只保留正在使用的 `main.js`
 - `assets/`：站点图标、本地占位图和少量前端依赖
 - `assets/vendor/lucide-subset.js`：专业页实际使用的 Lucide 图标子集
+- `ACCEPTANCE-REPORT.md`：项目验收报告，记录已完成页面、验证结果和待补资料
 - `dist-github-pages/`：GitHub Pages 上传版本，只放上线需要的文件
 
 ## 维护说明

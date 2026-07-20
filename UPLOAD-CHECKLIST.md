@@ -16,6 +16,7 @@
 - `sources.html`
 - `README.md`
 - `PROJECT-BRIEF.md`
+- `ACCEPTANCE-REPORT.md`
 - `css/style.css`
 - `js/main.js`
 - `assets/icons/favicon.svg`
