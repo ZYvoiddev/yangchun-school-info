@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
@@ -8,108 +8,471 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="assets/vendor/lucide-subset.js" defer></script>
   </head>
-<body>
-  <div class="notice-bar">学生个人学习项目，非学校官方网站。专业信息根据公开资料整理，具体招生专业以学校官方发布为准。</div>
-  <header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">高新</span><span><span class="brand-title">阳春高新职校</span><span class="brand-subtitle">信息展示页</span></span></a><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button><nav class="nav-links" aria-label="主导航"><a href="index.html">首页</a><a href="about.html">学校概况</a><a class="active" href="majors.html">专业介绍</a><a href="campus.html">校园环境</a><a href="admission.html">招生就业</a><a href="contact.html">联系我们</a><a href="sources.html">资料来源</a></nav></div></header>
-  <main>
-    <section class="page-hero"><div class="container"><h1>专业介绍</h1><p class="page-copy">先按兴趣方向了解专业。这里不写专业代码、学费、就业率等未公开细节。</p><div class="page-meta"><span>资料状态：已确认 / 待确认 / 占位</span><span>最后更新：2026-07-20</span></div></div></section>
-    <section class="section">
-      <div class="container">
-        <div class="status-strip">
-          <span class="status-chip confirmed">已确认：15 个已录入专业名称和方向</span>
-          <span class="status-chip pending">待确认：简章提到的第 16 个专业、专业代码、招生计划、对口升学数据</span>
-          <span class="status-chip placeholder">占位：专业实训现场图与学生作品</span>
+  <body>
+    <div class="notice-bar">学生个人学习项目，非学校官方网站。专业信息根据公开资料整理，具体招生专业以学校官方发布为准。</div>
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">高新</span>
+          <span>
+            <span class="brand-title">阳春高新职校</span>
+            <span class="brand-subtitle">信息展示页</span>
+          </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="index.html">首页</a>
+          <a href="about.html">学校概况</a>
+          <a class="active" href="majors.html">专业介绍</a>
+          <a href="campus.html">校园环境</a>
+          <a href="admission.html">招生就业</a>
+          <a href="contact.html">联系我们</a>
+          <a href="sources.html">资料来源</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero page-hero--majors">
+        <div class="container page-hero__layout">
+          <div class="page-hero__copy">
+            <span class="eyebrow">专业筛选 · 就业导向 · 升学参考</span>
+            <h1>专业介绍</h1>
+            <p class="page-copy">把专业页做成一张可读、可筛、可展开的清单。先看大类，再看单专业的课程、就业选项和升学方向。</p>
+            <div class="page-actions">
+              <a class="button primary" href="#major-filter">开始筛选</a>
+              <a class="button ghost" href="admission.html">查看招生信息</a>
+            </div>
+            <div class="page-meta">
+              <span>资料状态：已确认 / 待确认 / 占位</span>
+              <span>最后更新：2026-07-20</span>
+            </div>
+          </div>
+
+          <aside class="page-hero__panel" aria-label="页面优化方案">
+            <div class="page-hero__panel-head">
+              <span class="eyebrow">综合优化方案</span>
+              <h2>文档骨架 + 策略分组 + 网格卡片</h2>
+              <p>参考 MotionSites 的信息密度思路，主打清晰结构、稳定节奏和少量动效，不做过度装饰。</p>
+            </div>
+            <div class="page-hero__stack">
+              <article class="panel-chip">
+                <strong>Documentation</strong>
+                <span>用于标题、摘要和信息顺序，先讲清楚再展开。</span>
+              </article>
+              <article class="panel-chip">
+                <strong>Strat</strong>
+                <span>用于专业分类、对比和路径展示，让用户一眼看到分组。</span>
+              </article>
+              <article class="panel-chip">
+                <strong>Nimbus Grid</strong>
+                <span>用于专业卡片和模块排布，保持稳定、整齐、可扫读。</span>
+              </article>
+            </div>
+            <div class="page-hero__note">
+              当前页面录入了 15 个已核对专业。第 16 个专业、专业代码、招生计划和对口升学数据仍保留待确认状态。
+            </div>
+          </aside>
         </div>
-        <div class="major-overview" aria-label="专业分类概览">
-          <article class="card major-summary-card">
-            <small>信息技术</small>
-            <strong>4 个专业</strong>
-            <p>更适合电脑操作、内容制作、网络应用和数字工具方向。</p>
-          </article>
-          <article class="card major-summary-card">
-            <small>智能制造</small>
-            <strong>4 个专业</strong>
-            <p>更适合设备操作、自动化实训、新能源和无人机方向。</p>
-          </article>
-          <article class="card major-summary-card">
-            <small>现代服务</small>
-            <strong>7 个专业</strong>
-            <p>更适合烹饪、面点、美容、康养、旅游和体育服务方向。</p>
-          </article>
-        </div>
-        <div class="risk-note" style="margin-bottom: 18px;">专业口径说明：招生材料提到 16 个热门专业，当前页面只录入了已能核对名称的 15 个专业。缺失专业暂不猜测，等学校官方材料或更清晰截图确认后再补充。</div>
-        <div class="major-filter" aria-label="专业分类筛选">
-          <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部</button>
-          <button class="filter-button" type="button" data-filter="it" aria-pressed="false">信息技术</button>
-          <button class="filter-button" type="button" data-filter="manufacturing" aria-pressed="false">智能制造</button>
-          <button class="filter-button" type="button" data-filter="service" aria-pressed="false">现代服务</button>
-        </div>
-        <p class="filter-status" data-filter-status aria-live="polite">当前显示全部专业方向。</p>
-        <div class="major-grid">
-          <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="monitor"></i></span><div><span class="category">信息技术</span><h3>计算机应用</h3><p>适合对电脑操作、办公应用、网络基础和数字工具感兴趣的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>办公软件</em><em>网络基础</em><em>数字工具</em></div></div><div class="path-flow"><span>办公信息化</span><b></b><span>基础技术服务</span></div></article>
-          <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="shopping-bag"></i></span><div><span class="category">信息技术</span><h3>电子商务</h3><p>适合喜欢网络营销、直播电商、网店运营和客户沟通的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>平台运营</em><em>内容推广</em><em>客户沟通</em></div></div><div class="path-flow"><span>电商运营</span><b></b><span>内容助理</span></div></article>
-          <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="camera"></i></span><div><span class="category">信息技术</span><h3>数字影像技术</h3><p>适合喜欢拍摄、剪辑、图片处理和视觉表达的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>影像采集</em><em>剪辑制作</em><em>图片处理</em></div></div><div class="path-flow"><span>影像制作</span><b></b><span>短视频助理</span></div></article>
-          <article class="card major-card" data-category="it"><div class="major-main"><span class="major-icon"><i data-lucide="radio-tower"></i></span><div><span class="category">信息技术</span><h3>通信系统工程安装与维护</h3><p>适合对网络通信、设备安装和维护感兴趣的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>通信设备</em><em>线路基础</em><em>安装维护</em></div></div><div class="path-flow"><span>通信工程服务</span><b></b><span>设备维护</span></div></article>
-          <article class="card major-card" data-category="manufacturing"><div class="major-main"><span class="major-icon"><i data-lucide="bot"></i></span><div><span class="category">智能制造</span><h3>工业机器人技术应用</h3><p>适合喜欢机械设备、自动化和动手实训的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>机器人应用</em><em>基础维护</em><em>现场实训</em></div></div><div class="path-flow"><span>设备操作</span><b></b><span>自动化服务</span></div></article>
-          <article class="card major-card" data-category="manufacturing"><div class="major-main"><span class="major-icon"><i data-lucide="settings"></i></span><div><span class="category">智能制造</span><h3>智能设备运行与维护</h3><p>适合对设备运行、检修和生产现场技术感兴趣的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>设备运行</em><em>检修基础</em><em>生产规范</em></div></div><div class="path-flow"><span>设备运维</span><b></b><span>生产技术岗位</span></div></article>
-          <article class="card major-card" data-category="manufacturing"><div class="major-main"><span class="major-icon"><i data-lucide="plane"></i></span><div><span class="category">智能制造</span><h3>无人机操控与维护</h3><p>适合喜欢飞行设备、航拍和设备维护的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>无人机操控</em><em>设备维护</em><em>航拍基础</em></div></div><div class="path-flow"><span>航拍服务</span><b></b><span>巡检维护</span></div></article>
-          <article class="card major-card" data-category="manufacturing"><div class="major-main"><span class="major-icon"><i data-lucide="car"></i></span><div><span class="category">智能制造</span><h3>新能源汽车运用与维修</h3><p>适合关注汽车技术、新能源产业和维修服务的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>汽车结构</em><em>检测基础</em><em>维修规范</em></div></div><div class="path-flow"><span>汽车维修</span><b></b><span>售后服务</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="croissant"></i></span><div><span class="category">现代服务</span><h3>中西面点</h3><p>适合喜欢烘焙、面点制作和餐饮服务的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>面点制作</em><em>烘焙基础</em><em>门店规范</em></div></div><div class="path-flow"><span>餐饮门店</span><b></b><span>烘焙岗位</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="chef-hat"></i></span><div><span class="category">现代服务</span><h3>中餐烹饪</h3><p>适合喜欢厨艺、餐饮制作和实践操作的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>中餐烹调</em><em>厨房规范</em><em>实践操作</em></div></div><div class="path-flow"><span>餐饮制作</span><b></b><span>厨房助理</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="sparkles"></i></span><div><span class="category">现代服务</span><h3>美容美体艺术</h3><p>适合对形象设计、审美表达和服务沟通感兴趣的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>美容基础</em><em>美体服务</em><em>沟通礼仪</em></div></div><div class="path-flow"><span>美容服务</span><b></b><span>形象助理</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="palette"></i></span><div><span class="category">现代服务</span><h3>艺术设计与制作</h3><p>适合喜欢绘画、设计、视觉创意和手工制作的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>设计基础</em><em>视觉制作</em><em>创意表达</em></div></div><div class="path-flow"><span>设计助理</span><b></b><span>广告制作</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="map"></i></span><div><span class="category">现代服务</span><h3>康养休闲旅游服务</h3><p>适合喜欢服务沟通、旅游接待和健康服务方向的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>康养服务</em><em>旅游接待</em><em>休闲服务</em></div></div><div class="path-flow"><span>旅游服务</span><b></b><span>康养岗位</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="baby"></i></span><div><span class="category">现代服务</span><h3>母婴照护</h3><p>适合细心、有耐心、愿意从事照护服务的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>母婴护理</em><em>照护规范</em><em>服务沟通</em></div></div><div class="path-flow"><span>母婴服务</span><b></b><span>照护岗位</span></div></article>
-          <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="dumbbell"></i></span><div><span class="category">现代服务</span><h3>休闲体育服务与管理</h3><p>适合热爱运动、希望从事体育服务与活动组织的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>体育服务</em><em>活动管理</em><em>场馆协助</em></div></div><div class="path-flow"><span>体育场馆</span><b></b><span>活动服务</span></div></article>
-        </div>
-        <div class="section soft" style="margin-top: 24px; padding: 28px 24px; border-radius: 12px;">
+      </section>
+
+      <section class="section section--tight">
+        <div class="container">
           <div class="section-head">
-            <h2>怎么选专业更稳</h2>
-            <p class="section-lead">中职专业不是“看名字好听就选”，更适合先看自己愿不愿意动手、能不能接受实训节奏、以后想往哪类岗位走。</p>
+            <span class="eyebrow">现状摘要</span>
+            <h2>先用三类信息把专业页站稳</h2>
+            <p class="section-lead">这部分不是展示“多”，而是展示“清楚”。家长和学生先判断方向，再进入单个专业详情。</p>
+          </div>
+
+          <div class="major-overview">
+            <article class="card major-summary-card">
+              <small>信息技术</small>
+              <strong>4 个专业</strong>
+              <p>更适合电脑操作、内容制作、网络应用和数字工具方向。</p>
+            </article>
+            <article class="card major-summary-card">
+              <small>智能制造</small>
+              <strong>4 个专业</strong>
+              <p>更适合设备操作、自动化实训、新能源和无人机方向。</p>
+            </article>
+            <article class="card major-summary-card">
+              <small>现代服务</small>
+              <strong>7 个专业</strong>
+              <p>更适合烹饪、面点、美容、康养、旅游和体育服务方向。</p>
+            </article>
+          </div>
+
+          <div class="risk-note majors-note">
+            专业口径说明：招生材料提到 16 个热门专业，当前页面只录入了已能核对名称的 15 个专业。缺失专业暂不猜测，等学校官方材料或更清晰截图确认后再补充。
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="major-filter">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">专业列表</span>
+            <h2>按方向筛选，再点进看完整详情</h2>
+            <p class="section-lead">卡片先给结论，弹窗再展开课程、岗位、升学和专业特色。移动端也会保持同一套信息结构。</p>
+          </div>
+
+          <div class="major-filter" aria-label="专业分类筛选">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button class="filter-button" type="button" data-filter="it" aria-pressed="false">信息技术</button>
+            <button class="filter-button" type="button" data-filter="manufacturing" aria-pressed="false">智能制造</button>
+            <button class="filter-button" type="button" data-filter="service" aria-pressed="false">现代服务</button>
+          </div>
+          <p class="filter-status" data-filter-status aria-live="polite">当前显示全部专业方向，共 15 个专业。</p>
+
+          <div class="major-grid">
+            <article class="card major-card" data-category="it">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="monitor"></i></span>
+                <div>
+                  <span class="category">信息技术</span>
+                  <h3>计算机应用</h3>
+                  <p>适合对电脑操作、办公应用、网络基础和数字工具感兴趣的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>办公软件</em><em>网络基础</em><em>数字工具</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>办公信息化</span><b></b><span>基础技术服务</span></div>
+            </article>
+
+            <article class="card major-card" data-category="it">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="shopping-bag"></i></span>
+                <div>
+                  <span class="category">信息技术</span>
+                  <h3>电子商务</h3>
+                  <p>适合喜欢网络营销、直播电商、网店运营和客户沟通的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>平台运营</em><em>内容推广</em><em>客户沟通</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>电商运营</span><b></b><span>内容助理</span></div>
+            </article>
+
+            <article class="card major-card" data-category="it">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="camera"></i></span>
+                <div>
+                  <span class="category">信息技术</span>
+                  <h3>数字影像技术</h3>
+                  <p>适合喜欢拍摄、剪辑、图片处理和视觉表达的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>影像采集</em><em>剪辑制作</em><em>图片处理</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>影像制作</span><b></b><span>短视频助理</span></div>
+            </article>
+
+            <article class="card major-card" data-category="it">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="radio-tower"></i></span>
+                <div>
+                  <span class="category">信息技术</span>
+                  <h3>通信系统工程安装与维护</h3>
+                  <p>适合对网络通信、设备安装和维护感兴趣的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>通信设备</em><em>线路基础</em><em>安装维护</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>通信工程服务</span><b></b><span>设备维护</span></div>
+            </article>
+
+            <article class="card major-card" data-category="manufacturing">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="bot"></i></span>
+                <div>
+                  <span class="category">智能制造</span>
+                  <h3>工业机器人技术应用</h3>
+                  <p>适合喜欢机械设备、自动化和动手实训的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>机器人应用</em><em>基础维护</em><em>现场实训</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>设备操作</span><b></b><span>自动化服务</span></div>
+            </article>
+
+            <article class="card major-card" data-category="manufacturing">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="settings"></i></span>
+                <div>
+                  <span class="category">智能制造</span>
+                  <h3>智能设备运行与维护</h3>
+                  <p>适合对设备运行、检修和生产现场技术感兴趣的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>设备运行</em><em>检修基础</em><em>生产规范</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>设备运维</span><b></b><span>生产技术岗位</span></div>
+            </article>
+
+            <article class="card major-card" data-category="manufacturing">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="plane"></i></span>
+                <div>
+                  <span class="category">智能制造</span>
+                  <h3>无人机操控与维护</h3>
+                  <p>适合喜欢飞行设备、航拍和设备维护的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>无人机操控</em><em>设备维护</em><em>航拍基础</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>航拍服务</span><b></b><span>巡检维护</span></div>
+            </article>
+
+            <article class="card major-card" data-category="manufacturing">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="car"></i></span>
+                <div>
+                  <span class="category">智能制造</span>
+                  <h3>新能源汽车运用与维修</h3>
+                  <p>适合关注汽车技术、新能源产业和维修服务的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>汽车结构</em><em>检测基础</em><em>维修规范</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>汽车维修</span><b></b><span>售后服务</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="croissant"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>中西面点</h3>
+                  <p>适合喜欢烘焙、面点制作和餐饮服务的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>面点制作</em><em>烘焙基础</em><em>门店规范</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>餐饮门店</span><b></b><span>烘焙岗位</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="chef-hat"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>中餐烹饪</h3>
+                  <p>适合喜欢厨艺、餐饮制作和实践操作的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>中餐烹调</em><em>厨房规范</em><em>实践操作</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>餐饮制作</span><b></b><span>厨房助理</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="sparkles"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>美容美体艺术</h3>
+                  <p>适合对形象设计、审美表达和服务沟通感兴趣的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>美容基础</em><em>美体服务</em><em>沟通礼仪</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>美容服务</span><b></b><span>形象助理</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="palette"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>艺术设计与制作</h3>
+                  <p>适合喜欢绘画、设计、视觉创意和手工制作的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>设计基础</em><em>视觉制作</em><em>创意表达</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>设计助理</span><b></b><span>广告制作</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="map"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>康养休闲旅游服务</h3>
+                  <p>适合喜欢服务沟通、旅游接待和健康服务方向的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>康养服务</em><em>旅游接待</em><em>休闲服务</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>旅游服务</span><b></b><span>康养岗位</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="baby"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>母婴照护</h3>
+                  <p>适合细心、有耐心、愿意从事照护服务的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>母婴护理</em><em>照护规范</em><em>服务沟通</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>母婴服务</span><b></b><span>照护岗位</span></div>
+            </article>
+
+            <article class="card major-card" data-category="service">
+              <div class="major-main">
+                <span class="major-icon"><i data-lucide="dumbbell"></i></span>
+                <div>
+                  <span class="category">现代服务</span>
+                  <h3>休闲体育服务与管理</h3>
+                  <p>适合热爱运动、希望从事体育服务与活动组织的学生。</p>
+                </div>
+              </div>
+              <div class="learn-block">
+                <span>学什么</span>
+                <div class="skill-pills">
+                  <em>体育服务</em><em>活动管理</em><em>场馆协助</em>
+                </div>
+              </div>
+              <div class="path-flow"><span>体育场馆</span><b></b><span>活动服务</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">选专业建议</span>
+            <h2>先看兴趣，再看节奏，最后看出口</h2>
+            <p class="section-lead">中职专业不是“名字好听就选”，更适合看自己愿不愿意动手、能不能接受实训节奏，以及以后想走哪一类岗位。</p>
           </div>
           <div class="grid cols-3">
-            <article class="card"><h3>喜欢电脑和表达</h3><p>更适合信息技术类，比如计算机应用、电子商务、数字影像技术。</p></article>
-            <article class="card"><h3>喜欢设备和操作</h3><p>更适合智能制造类，比如工业机器人、智能设备维护、无人机、新能源汽车。</p></article>
-            <article class="card"><h3>喜欢服务和手艺</h3><p>更适合现代服务类，比如烹饪、面点、美容、康养、母婴照护。</p></article>
+            <article class="card">
+              <h3>喜欢电脑和表达</h3>
+              <p>更适合信息技术类，比如计算机应用、电子商务、数字影像技术。</p>
+            </article>
+            <article class="card">
+              <h3>喜欢设备和操作</h3>
+              <p>更适合智能制造类，比如工业机器人、智能设备维护、无人机、新能源汽车。</p>
+            </article>
+            <article class="card">
+              <h3>喜欢服务和手艺</h3>
+              <p>更适合现代服务类，比如烹饪、面点、美容、康养、母婴照护。</p>
+            </article>
           </div>
         </div>
-        <div class="section-actions"><a class="button primary" href="admission.html">咨询招生信息</a><a class="button ghost" href="campus.html">查看校园环境</a></div>
+      </section>
+
+      <section class="section section--soft">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">下一步</span>
+            <h2>想继续看校园和招生，就顺着这条路径走</h2>
+            <p class="section-lead">专业页已经把方向梳理清楚。下一步建议看校园环境、招生就业和资料来源，形成完整判断。</p>
+          </div>
+          <div class="section-actions">
+            <a class="button primary" href="admission.html">咨询招生信息</a>
+            <a class="button ghost" href="campus.html">查看校园环境</a>
+            <a class="button secondary" href="sources.html">查看资料来源</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <a class="floating-cta" href="admission.html">招生咨询</a>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h2>阳春高新职校信息展示页</h2>
+          <p>学生个人学习项目，非学校官方网站。本站内容基于公开资料整理，不代表学校官方立场。</p>
+        </div>
+        <div class="footer-col">
+          <h3>快速链接</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="about.html">学校概况</a></li>
+            <li><a href="majors.html">专业介绍</a></li>
+            <li><a href="campus.html">校园环境</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>联系方式</h3>
+          <ul class="footer-links">
+            <li>招生咨询：0662-7763333</li>
+            <li>学校地址：阳春市河西街道石上村委会牛桥头</li>
+            <li><a href="contact.html">查看联系页</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>微信公众号</h3>
+          <div class="footer-qrcode">公众号二维码待补充</div>
+        </div>
       </div>
-    </section>
-  </main>
-  <a class="floating-cta" href="admission.html">招生咨询</a>
-  <footer class="site-footer">
-  <div class="container footer-grid">
-    <div class="footer-col">
-      <h2>阳春高新职校信息展示页</h2>
-      <p>学生个人学习项目，非学校官方网站。本站内容基于公开资料整理，不代表学校官方立场。</p>
-    </div>
-    <div class="footer-col">
-      <h3>快速链接</h3>
-      <ul class="footer-links">
-        <li><a href="index.html">首页</a></li>
-        <li><a href="about.html">学校概况</a></li>
-        <li><a href="majors.html">专业介绍</a></li>
-        <li><a href="campus.html">校园环境</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>联系方式</h3>
-      <ul class="footer-links">
-        <li>招生咨询：0662-7763333</li>
-        <li>学校地址：阳春市河西街道石上村委会牛桥头</li>
-        <li><a href="contact.html">查看联系页</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h3>微信公众号</h3>
-      <div class="footer-qrcode">公众号二维码待补充</div>
-    </div>
-  </div>
-  <div class="container footer-disclaimer">学生个人学习项目，非学校官方网站。具体招生政策、收费标准和联系方式以学校官方发布为准。</div>
-  <div class="container footer-bottom">© 2026 学生个人项目。</div>
-  <div class="container footer-bottom"><a href="sources.html">资料来源与免责声明</a></div>
-</footer>
-  <script src="js/main.js"></script>
-</body>
+      <div class="container footer-disclaimer">学生个人学习项目，非学校官方网站。具体招生政策、收费标准和联系方式以学校官方发布为准。</div>
+      <div class="container footer-bottom">© 2026 学生个人项目。</div>
+      <div class="container footer-bottom"><a href="sources.html">资料来源与免责声明</a></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
