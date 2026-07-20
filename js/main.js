@@ -10,8 +10,18 @@ if (menuToggle && navLinks) {
 
 const noticeBars = document.querySelectorAll(".notice-bar");
 const noticeStorageKey = "yangchun-school-notice-dismissed-v1";
+const noticeStorage = (() => {
+  try {
+    const testKey = "__yangchun_notice_test__";
+    window.localStorage.setItem(testKey, "1");
+    window.localStorage.removeItem(testKey);
+    return window.localStorage;
+  } catch {
+    return null;
+  }
+})();
 
-if (noticeBars.length && localStorage.getItem(noticeStorageKey) !== "1") {
+if (noticeBars.length && (!noticeStorage || noticeStorage.getItem(noticeStorageKey) !== "1")) {
   noticeBars.forEach((bar) => {
     if (bar.dataset.noticeReady) return;
 
@@ -28,14 +38,20 @@ if (noticeBars.length && localStorage.getItem(noticeStorageKey) !== "1") {
     close.setAttribute("aria-label", "关闭通知栏");
     close.textContent = "×";
     close.addEventListener("click", () => {
-      localStorage.setItem(noticeStorageKey, "1");
+      if (noticeStorage) {
+        try {
+          noticeStorage.setItem(noticeStorageKey, "1");
+        } catch {
+          // storage is optional
+        }
+      }
       bar.remove();
     });
 
     bar.append(span, close);
     bar.dataset.noticeReady = "true";
   });
-} else {
+} else if (noticeBars.length) {
   noticeBars.forEach((bar) => bar.remove());
 }
 
