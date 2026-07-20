@@ -19,7 +19,7 @@
 - `css/style.css`
 - `js/main.js`
 - `assets/icons/favicon.svg`
-- `assets/vendor/lucide.min.js`
+- `assets/vendor/lucide-subset.js`
 - `assets/images/placeholders/*.svg`
 
 ## 不要上传
