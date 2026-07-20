@@ -12,19 +12,25 @@
 - `campus.html`
 - `admission.html`
 - `contact.html`
+- `teachers.html`
 - `sources.html`
 - `README.md`
 - `PROJECT-BRIEF.md`
 - `css/style.css`
 - `js/main.js`
 - `assets/icons/favicon.svg`
+- `assets/vendor/lucide.min.js`
 - `assets/images/placeholders/*.svg`
 
 ## 不要上传
 
+- `qa/`
+- `archive/`
 - `.playwright-cli/`
 - `logs/`
 - `scripts/`
+- `server.err.log`
+- `server.out.log`
 - 任何本地测试截图或缓存文件
 
 ## GitHub 仓库建议
@@ -45,10 +51,11 @@
 ## 上线后检查
 
 - 首页能打开。
-- 导航能跳转 6 个页面。
+- 导航能跳转 7 个内页。
 - `css/style.css` 正常加载，页面不是纯文字。
 - 示意图正常显示。
 - 手机端菜单能打开。
 - 专业筛选能工作。
 - 演示表单提交只弹出提示，不提交真实信息。
+- 师资团队页只展示占位结构，不展示未经授权的教师个人信息。
 - 页首和页脚都有“学生个人项目，非学校官方网站”声明。

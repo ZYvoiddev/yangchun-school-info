@@ -14,20 +14,24 @@ const noticeStorageKey = "yangchun-school-notice-dismissed-v1";
 if (noticeBars.length && localStorage.getItem(noticeStorageKey) !== "1") {
   noticeBars.forEach((bar) => {
     if (bar.dataset.noticeReady) return;
+
     const text = bar.textContent.trim();
     bar.textContent = "";
+
     const span = document.createElement("span");
     span.className = "notice-bar-text";
     span.textContent = text;
+
     const close = document.createElement("button");
     close.className = "notice-close";
     close.type = "button";
-    close.setAttribute("aria-label", "关闭通知条");
+    close.setAttribute("aria-label", "关闭通知栏");
     close.textContent = "×";
     close.addEventListener("click", () => {
       localStorage.setItem(noticeStorageKey, "1");
       bar.remove();
     });
+
     bar.append(span, close);
     bar.dataset.noticeReady = "true";
   });
@@ -38,6 +42,7 @@ if (noticeBars.length && localStorage.getItem(noticeStorageKey) !== "1") {
 document.querySelectorAll("[data-filter]").forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
+
     document.querySelectorAll("[data-filter]").forEach((item) => item.classList.remove("active"));
     button.classList.add("active");
 
@@ -60,7 +65,7 @@ const countTargets = document.querySelectorAll("[data-count]");
 if (countTargets.length) {
   const animateCount = (target) => {
     const end = Number(target.dataset.count);
-    const duration = 1100;
+    const duration = 900;
     const startTime = performance.now();
     const hasDecimal = !Number.isInteger(end);
 
@@ -71,23 +76,26 @@ if (countTargets.length) {
       target.textContent = hasDecimal ? value.toFixed(1) : Math.round(value).toString();
 
       if (progress < 1) {
-        requestAnimationFrame(tick);
+        setTimeout(() => tick(performance.now()), 16);
       } else {
         target.textContent = hasDecimal ? end.toFixed(1) : String(end);
       }
     };
 
-    requestAnimationFrame(tick);
+    setTimeout(() => tick(performance.now()), 16);
   };
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting && !entry.target.dataset.counted) {
-        entry.target.dataset.counted = "true";
-        animateCount(entry.target);
-      }
-    });
-  }, { threshold: 0.4 });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !entry.target.dataset.counted) {
+          entry.target.dataset.counted = "true";
+          animateCount(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
 
   countTargets.forEach((target) => observer.observe(target));
 }

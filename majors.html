@@ -1,20 +1,25 @@
 ﻿<!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>专业介绍｜阳春高新职校信息展示页</title>
-  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>专业介绍｜阳春高新职校信息展示页</title>
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="assets/vendor/lucide.min.js" defer></script>
+  </head>
 <body>
   <div class="notice-bar">学生个人学习项目，非学校官方网站。专业信息根据公开资料整理，具体招生专业以学校官方发布为准。</div>
   <header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">高新</span><span><span class="brand-title">阳春高新职校</span><span class="brand-subtitle">信息展示页</span></span></a><button class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button><nav class="nav-links" aria-label="主导航"><a href="index.html">首页</a><a href="about.html">学校概况</a><a class="active" href="majors.html">专业介绍</a><a href="campus.html">校园环境</a><a href="admission.html">招生就业</a><a href="contact.html">联系我们</a><a href="sources.html">资料来源</a></nav></div></header>
   <main>
-    <section class="page-hero"><div class="container"><h1>专业介绍</h1><p class="page-copy">先按兴趣方向了解专业。这里不写专业代码、学费、就业率等未公开细节。</p></div></section>
+    <section class="page-hero"><div class="container"><h1>专业介绍</h1><p class="page-copy">先按兴趣方向了解专业。这里不写专业代码、学费、就业率等未公开细节。</p><div class="page-meta"><span>资料状态：已确认 / 待确认 / 占位</span><span>最后更新：2026-07-19</span></div></div></section>
     <section class="section">
       <div class="container">
+        <div class="status-strip">
+          <span class="status-chip confirmed">已确认：专业名称和方向</span>
+          <span class="status-chip pending">待确认：专业代码、招生计划、对口升学数据</span>
+          <span class="status-chip placeholder">占位：专业实训现场图与学生作品</span>
+        </div>
         <div class="major-filter" aria-label="专业分类筛选">
           <button class="filter-button active" type="button" data-filter="all">全部</button>
           <button class="filter-button" type="button" data-filter="it">信息技术</button>
@@ -37,6 +42,17 @@
           <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="map"></i></span><div><span class="category">现代服务</span><h3>康养休闲旅游服务</h3><p>适合喜欢服务沟通、旅游接待和健康服务方向的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>康养服务</em><em>旅游接待</em><em>休闲服务</em></div></div><div class="path-flow"><span>旅游服务</span><b></b><span>康养岗位</span></div></article>
           <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="baby"></i></span><div><span class="category">现代服务</span><h3>母婴照护</h3><p>适合细心、有耐心、愿意从事照护服务的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>母婴护理</em><em>照护规范</em><em>服务沟通</em></div></div><div class="path-flow"><span>母婴服务</span><b></b><span>照护岗位</span></div></article>
           <article class="card major-card" data-category="service"><div class="major-main"><span class="major-icon"><i data-lucide="dumbbell"></i></span><div><span class="category">现代服务</span><h3>休闲体育服务与管理</h3><p>适合热爱运动、希望从事体育服务与活动组织的学生。</p></div></div><div class="learn-block"><span>学什么</span><div class="skill-pills"><em>体育服务</em><em>活动管理</em><em>场馆协助</em></div></div><div class="path-flow"><span>体育场馆</span><b></b><span>活动服务</span></div></article>
+        </div>
+        <div class="section soft" style="margin-top: 24px; padding: 28px 24px; border-radius: 12px;">
+          <div class="section-head">
+            <h2>怎么选专业更稳</h2>
+            <p class="section-lead">中职专业不是“看名字好听就选”，更适合先看自己愿不愿意动手、能不能接受实训节奏、以后想往哪类岗位走。</p>
+          </div>
+          <div class="grid cols-3">
+            <article class="card"><h3>喜欢电脑和表达</h3><p>更适合信息技术类，比如计算机应用、电子商务、数字影像技术。</p></article>
+            <article class="card"><h3>喜欢设备和操作</h3><p>更适合智能制造类，比如工业机器人、智能设备维护、无人机、新能源汽车。</p></article>
+            <article class="card"><h3>喜欢服务和手艺</h3><p>更适合现代服务类，比如烹饪、面点、美容、康养、母婴照护。</p></article>
+          </div>
         </div>
         <div class="section-actions"><a class="button primary" href="admission.html">咨询招生信息</a><a class="button ghost" href="campus.html">查看校园环境</a></div>
       </div>

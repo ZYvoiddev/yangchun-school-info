@@ -84,6 +84,7 @@ img {
 }
 
 .nav-wrap {
+  position: relative;
   max-width: 1180px;
   margin: 0 auto;
   padding: 14px 20px;
@@ -178,11 +179,17 @@ img {
   max-width: 1180px;
   margin: 0 auto;
   padding: 96px 20px 72px;
+  min-height: min(860px, calc(100vh - 56px));
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.62fr);
   gap: 44px;
   align-items: end;
   width: 100%;
+}
+
+.hero-content,
+.hero-facts {
+  min-width: 0;
 }
 
 .hero h1,
@@ -197,10 +204,11 @@ img {
 .hero h1 {
   color: var(--white);
   max-width: 880px;
-  font-family: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  font-family: "Songti SC", "SimSun", "STSong", Georgia, serif;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
   text-shadow: 0 4px 22px rgba(0, 0, 0, 0.35);
+  overflow-wrap: anywhere;
 }
 
 .hero-school {
@@ -209,6 +217,7 @@ img {
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .motto {
@@ -230,6 +239,7 @@ img {
   color: #e2e8f0;
   font-size: 19px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+  overflow-wrap: anywhere;
 }
 
 .hero-actions,
@@ -284,7 +294,7 @@ img {
 }
 
 .button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .hero-facts {
@@ -313,6 +323,7 @@ img {
   font-size: clamp(28px, 3.4vw, 42px);
   line-height: 1;
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .hero-fact > span {
@@ -366,7 +377,7 @@ img {
 }
 
 .section {
-  padding: 84px 0;
+  padding: 88px 0;
 }
 
 .section.soft {
@@ -584,8 +595,8 @@ img {
 }
 
 .page-hero .container {
-  padding-top: 58px;
-  padding-bottom: 54px;
+  padding-top: 64px;
+  padding-bottom: 58px;
 }
 
 .page-copy {
@@ -1180,6 +1191,14 @@ img {
 }
 
 @media (max-width: 900px) {
+  .nav-wrap {
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+  }
+
   .nav-links {
     position: absolute;
     left: 0;
@@ -1192,6 +1211,7 @@ img {
     padding: 10px 20px 16px;
     background: var(--white);
     border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow);
   }
 
   .nav-links.open {
@@ -1210,6 +1230,7 @@ img {
   .hero-inner {
     grid-template-columns: 1fr;
     padding-top: 72px;
+    gap: 28px;
     align-items: center;
   }
 
@@ -1252,11 +1273,12 @@ img {
   }
 
   .brand-title {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .hero-inner {
     padding: 56px 16px 42px;
+    gap: 20px;
   }
 
   .hero h1,
@@ -1265,11 +1287,19 @@ img {
   }
 
   .hero h1 {
-    font-size: clamp(2.5rem, 11vw, 3.7rem);
+    font-size: clamp(2.05rem, 8.2vw, 2.8rem);
+    line-height: 1.06;
+    max-width: 6.8em;
+  }
+
+  .hero-school {
+    font-size: 14px;
   }
 
   .hero-copy {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 1.65;
+    max-width: 28ch;
   }
 
   .hero-facts {
@@ -1278,8 +1308,12 @@ img {
   }
 
   .hero-fact {
-    min-height: 96px;
-    padding: 14px;
+    min-height: 90px;
+    padding: 12px;
+  }
+
+  .hero-fact strong {
+    font-size: 24px;
   }
 
   .motto {
@@ -1294,7 +1328,7 @@ img {
   }
 
   .card {
-    padding: 20px;
+    padding: 18px;
   }
 
   .major-grid,
@@ -1361,7 +1395,7 @@ img {
   }
 
   .section {
-    padding: 56px 0;
+    padding: 60px 0;
   }
 
   .info-table th,
@@ -1374,8 +1408,29 @@ img {
     margin-bottom: 24px;
   }
 
+  .section-lead,
+  .page-copy {
+    font-size: 16px;
+    line-height: 1.66;
+  }
+
   .footer-grid {
     gap: 18px;
+  }
+
+  .hero-actions,
+  .section-actions {
+    gap: 10px;
+  }
+
+  .hero-actions .button,
+  .section-actions .button {
+    flex: 1 1 100%;
+  }
+
+  .page-hero .container {
+    padding-top: 46px;
+    padding-bottom: 42px;
   }
 
   .floating-cta {
@@ -1391,18 +1446,42 @@ img {
     bottom: 14px;
   }
 
+  .floating-tools-stack {
+    gap: 8px;
+  }
+
   .floating-tool {
-    min-width: 96px;
+    min-width: 92px;
     padding: 9px 12px;
     font-size: 13px;
   }
 
   .wechat-popover {
-    width: 160px;
+    width: 156px;
   }
 
   .logo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-fact {
+    min-height: auto;
+  }
+
+  .hero-actions .button,
+  .section-actions .button {
+    width: 100%;
+  }
+
+  .floating-tools {
+    right: 10px;
+    bottom: 10px;
   }
 }
 
