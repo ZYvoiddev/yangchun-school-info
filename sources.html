@@ -28,13 +28,62 @@
     <section class="page-hero">
       <div class="container">
         <h1>资料来源与免责声明</h1>
-        <p class="page-copy">本站用于个人学习和作品展示，只整理公开信息，不代表学校官方发布招生政策。</p>
+        <p class="page-copy">本站用于个人学习和作品展示。这个页面负责说明每条关键信息来自哪里、能不能直接展示、哪些仍需复核。</p>
         <div class="page-meta"><span>资料状态：已确认 / 待确认 / 占位</span><span>最后更新：2026-07-20</span></div>
       </div>
     </section>
 
+    <section class="section soft" style="padding-top: 28px; padding-bottom: 0;">
+      <div class="container">
+        <div class="section-head">
+          <h2>先看最关键的 4 件事</h2>
+          <p class="section-lead">来源页的作用不是堆链接，而是让访问者知道哪些内容可信、哪些内容还不能当正式结论。</p>
+        </div>
+        <div class="grid cols-4">
+          <article class="card metric-card">
+            <small>项目性质</small>
+            <strong>非官方</strong>
+            <p>学生个人学习项目，不代表学校发布正式招生信息。</p>
+          </article>
+          <article class="card metric-card">
+            <small>优先来源</small>
+            <strong>公开资料</strong>
+            <p>学校公开渠道、政府公开信息、招生简章优先。</p>
+          </article>
+          <article class="card metric-card">
+            <small>截图资料</small>
+            <strong>摘要使用</strong>
+            <p>只提取事实字段，不照搬完整宣传文案。</p>
+          </article>
+          <article class="card metric-card">
+            <small>未核实项</small>
+            <strong>不补写</strong>
+            <p>收费、名单、就业率、内部资料等不自行推断。</p>
+          </article>
+        </div>
+        <div class="section-actions">
+          <a class="button primary" href="#source-types">看来源类型</a>
+          <a class="button secondary" href="#field-ledger">看字段台账</a>
+          <a class="button ghost" href="#display-boundary">看展示边界</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 28px; padding-bottom: 0;">
+      <div class="container">
+        <div class="tag-list admission-jump-list" aria-label="页面跳转">
+          <a class="tag" href="#source-types">来源类型</a>
+          <a class="tag" href="#source-layers">来源分层</a>
+          <a class="tag" href="#image-sources">图片图源</a>
+          <a class="tag" href="#field-ledger">字段台账</a>
+          <a class="tag" href="#brochure-summary">简章摘要</a>
+          <a class="tag" href="#display-boundary">展示边界</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
-      <div class="container grid cols-2">
+      <div class="container grid cols-2" id="source-types">
         <article class="card">
           <h2>信息来源类型</h2>
           <ul class="plain-list">
@@ -57,7 +106,7 @@
       </div>
     </section>
 
-    <section class="section soft">
+    <section class="section soft" id="source-layers">
       <div class="container">
         <div class="section-head">
           <h2>来源分层</h2>
@@ -68,10 +117,10 @@
             <h3>公开资料口径</h3>
             <p>早期公开网页、新闻报道、学校名录等，用于基础档案、性质、地址和早期规模数据。</p>
           </article>
-            <article class="card">
-              <h3>2026 招生简章口径</h3>
-              <p>用于招生对象、咨询时间、来校路线、简章里的规模口径、资助政策和实习基地等当前展示信息。</p>
-            </article>
+          <article class="card">
+            <h3>2026 招生简章口径</h3>
+            <p>用于招生对象、咨询时间、来校路线、简章里的规模口径、资助政策和实习基地等当前展示信息。</p>
+          </article>
           <article class="card">
             <h3>用户截图口径</h3>
             <p>用于从图片里提取结构化信息，但只做引用摘要，不把截图里的所有宣传文案原样搬到页面。</p>
@@ -80,7 +129,7 @@
       </div>
     </section>
 
-    <section class="section soft">
+    <section class="section soft" id="image-sources">
       <div class="container">
         <div class="section-head">
           <h2>图片图源</h2>
@@ -101,7 +150,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="field-ledger">
       <div class="container">
         <div class="section-head">
           <h2>字段级来源台账</h2>
@@ -110,15 +159,16 @@
         <table class="info-table">
           <tr><th>学校名称 / 性质 / 地址</th><td><span class="status-chip confirmed">已确认</span> 来自公开学校名录、公开网页和招生简章摘要；页面可直接展示。</td></tr>
           <tr><th>招生咨询电话</th><td><span class="status-chip confirmed">已确认</span> 当前展示为 0662-7763333；如学校发布新号码，应同步替换全站电话链接。</td></tr>
-          <tr><th>专业方向</th><td><span class="status-chip confirmed">已确认</span> 当前按 16 个专业方向展示；不补写专业代码和收费标准。</td></tr>
+          <tr><th>专业方向</th><td><span class="status-chip confirmed">已确认</span> 当前按 15 个已录入专业名称展示；招生材料提到 16 个热门专业，缺失项保持待复核，不补写专业代码和收费标准。</td></tr>
           <tr><th>校园规模</th><td><span class="status-chip confirmed">已确认</span> 105 亩、约 7 万平方米、1500+ 在校生并列保留，避免把不同口径硬合并。</td></tr>
           <tr><th>奖助学金 / 免学费</th><td><span class="status-chip confirmed">已确认</span> 可在来源页摘要，招生页按简章口径展示 1750 元 / 学期、2300 元 / 年、6000 元等信息。</td></tr>
+          <tr><th>宿舍 / 食堂 / 社团</th><td><span class="status-chip confirmed">已确认</span> 宿舍配置、24 小时热水、食堂 3000+ 人、39+ 特色社团按招生简章截图摘要展示。</td></tr>
           <tr><th>图片 / 二维码 / Logo</th><td><span class="status-chip placeholder">占位</span> 当前图片为本地占位图，公众号二维码和正式 logo 待授权补充。</td></tr>
         </table>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="brochure-summary">
       <div class="container">
         <div class="section-head">
           <h2>2026 招生简章摘要</h2>
@@ -133,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section soft">
+    <section class="section soft" id="display-boundary">
       <div class="container">
         <div class="section-head">
           <h2>哪些内容可以展示，哪些内容暂不展示</h2>
