@@ -982,6 +982,38 @@ img {
   color: #526175;
 }
 
+.story-arc {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.story-summary {
+  position: sticky;
+  top: 94px;
+  padding: 24px;
+}
+
+.story-summary h3 {
+  margin: 12px 0 10px;
+  color: var(--navy);
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.story-summary p {
+  color: #526175;
+}
+
+.story-summary .tag-list {
+  margin-top: 18px;
+}
+
+.story-summary .status-chip {
+  display: inline-flex;
+}
+
 .faq-item {
   border-top: 1px solid var(--line);
   padding: 18px 0;
@@ -1302,6 +1334,14 @@ img {
   .major-grid,
   .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .story-arc {
+    grid-template-columns: 1fr;
+  }
+
+  .story-summary {
+    position: static;
   }
 
   .footer-grid {
